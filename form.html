@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+</head>
+<body>
+  <h2>Student Registration Form</h2>
+  <form action="/submit" method="post" enctype="multipart/form-data">
+    
+    <!-- Basic Info -->
+    <label for="name">Student Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+    <label for="mobile">Mobile:</label><br>
+    <input type="tel" id="mobile" name="mobile" placeholder="123-456-7890" required><br><br>
+
+    <!-- Location -->
+    <label for="location">Location:</label><br>
+    <select id="location" name="location" required>
+      <option value="">--Select City--</option>
+      <option value="New York">New York</option>
+      <option value="Los Angeles">Los Angeles</option>
+      <option value="Chicago">Chicago</option>
+    </select><br><br>
+
+    <!-- Skills -->
+    <fieldset>
+      <legend>Technical Skills:</legend>
+      <input type="checkbox" id="java" name="skills" value="Java">
+      <label for="java">Java</label><br>
+      <input type="checkbox" id="kotlin" name="skills" value="Kotlin">
+      <label for="kotlin">Kotlin</label><br>
+      <input type="checkbox" id="python" name="skills" value="Python">
+      <label for="python">Python</label><br>
+      <input type="checkbox" id="c" name="skills" value="C">
+      <label for="c">C</label><br>
+      <input type="checkbox" id="cpp" name="skills" value="C++">
+      <label for="cpp">C++</label><br>
+    </fieldset><br>
+
+    <!-- File Uploads -->
+    <label for="marksheet">12th Marksheet:</label><br>
+    <input type="file" id="marksheet" name="marksheet" accept=".pdf,.jpg,.png" required><br><br>
+
+    <label for="resume">Resume:</label><br>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+
+    <!-- Education -->
+    <fieldset>
+      <legend>Education:</legend>
+      <input type="radio" id="bsc" name="education" value="B.Sc" required>
+      <label for="bsc">B.Sc</label><br>
+      <input type="radio" id="btech" name="education" value="B.Tech">
+      <label for="btech">B.Tech</label><br>
+      <input type="radio" id="msc" name="education" value="M.Sc">
+      <label for="msc">M.Sc</label><br>
+    </fieldset><br>
+
+    <!-- Branch -->
+    <label for="branch">Branch:</label><br>
+    <input type="text" id="branch" name="branch" placeholder="Enter your branch" required><br><br>
+
+    <!-- Terms -->
+    <input type="checkbox" id="agree" name="agree" value="yes" required>
+    <label for="agree">I agree to the terms and conditions</label><br><br>
+
+    <textarea id="comments" name="comments" placeholder="Additional comments..."></textarea><br><br>
+    <label for="color">Favorite Color:</label><br>
+    <input type="color" id="color" name="color" value="#000000"><br><br>
+    <!-- Submit -->
+    <input type="submit" value="Submit">
+  </form>
+ 
+</body>
+</html>
