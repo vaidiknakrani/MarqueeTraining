@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            white-space: nowrap;
+            position: relative;
+            height: 180px;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+            display: inline-block;
+            position: relative;
+            margin-left: -40px;
+            border: 2px solid #222;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 120px;
+        }
+
+        .box:nth-child(1) { background-color: #e74c3c; z-index: 6; }
+        .box:nth-child(2) { background-color: #f39c12; z-index: 5; top: +20px; left: +20px; }
+        .box:nth-child(3) { background-color: #f1c40f; z-index: 4; top: +40px; left: +40px; }
+        .box:nth-child(4) { background-color: #2ecc71; z-index: 3; top: +60px; left: +60px; }
+        .box:nth-child(5) { background-color: #3498db; z-index: 2; top: +80px; left: +80px; }
+        .box:nth-child(6) { background-color: #9b59b6; z-index: 1; top: +100px; left: +100px; }
+
+         .box:nth-child(7) { background-color: #e74c3c; z-index: 1; top: +110px; left: +110px; }
+        .box:nth-child(8) { background-color: #f39c12; z-index: 2; top: +120px; left: +120px; }
+        .box:nth-child(9) { background-color: #f1c40f; z-index: 3; top: +140px; left: +140px; }
+        .box:nth-child(10) { background-color: #2ecc71; z-index: 4; top: +160px; left: +160px; }
+        .box:nth-child(11) { background-color: #3498db; z-index: 5; top: +180px; left: +180px; }
+        .box:nth-child(12) { background-color: #9b59b6; z-index: 6; top: +200px; left: +200px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+        <div class="box">Box 6</div>
+        <div class="box">Box 7</div>
+        <div class="box">Box 8</div>
+        <div class="box">Box 9</div>
+        <div class="box">Box 10</div>
+        <div class="box">Box 11</div>
+        <div class="box">Box 12</div>
+    </div>
+</body>
+</html>

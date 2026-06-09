@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.9fr 1fr 2fr 1.35fr;
+            grid-template-areas:
+                "sidebar navbar navbar navbar"
+                "sidebar users revenue orders"
+                "sidebar chart chart table"
+                "sidebar widget1 widget2 widget3";
+                gap:12px;
+                height:100vh;
+            background-color:black;
+         }
+          .sidebar{
+            grid-area:sidebar;
+            background-color:rgb(69, 131, 247);
+            place-items:center;
+           
+          }
+          .navbar{
+            grid-area:navbar;
+            background-color:rgb(57, 247, 190);
+            place-items:center;
+          }
+          .users{
+            grid-area:users;
+            background-color:rgb(43, 210, 252);
+             place-items:center;
+          }
+          .revenue{
+            grid-area:revenue;
+            background-color:rgb(2, 224, 113);
+             place-items:center;
+          }
+          .orders{
+            grid-area:orders;
+            background-color:orange;
+             place-items:center;
+          }
+          .chart{
+            grid-area:chart;
+            background-color:rgb(248, 102, 248);
+             place-items:center;
+          }
+          .table{
+            grid-area:table;
+            background-color:rgb(240, 104, 104);
+             place-items:center;
+          }
+          .widget1{
+            grid-area:widget1;
+            background-color:rgb(8, 167, 219);
+             place-items:center;
+          }
+          .widget2{
+            grid-area:widget2;
+            background-color:rgb(8, 167, 219);
+             place-items:center;
+          }
+          .widget3{
+            grid-area:widget3;
+            background-color:rgb(8, 167, 219);
+             place-items:center;
+          }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar"><h1>Sidebar</h1></div>
+        <div class="navbar"><h1>Navbar</h1></div>
+        <div class="users"><h1>Users</h1><h1>12,450</h1></div>
+        <div class="revenue"><h1>Revenue</h1><h1> $24,800</h1></div>
+        <div class="orders"><h1>Orders</h1><h1>1234</h1></div>
+        <div class="chart"><h1>Chart</h1><h1> (span 2) </h1></div>
+        <div class="table"><h1>Table</h1></div>
+        <div class="widget1"><h1>Widget 1</h1></div>
+        <div class="widget2"><h1>Widget 2</h1></div>
+        <div class="widget3"><h1>Widget 3</h1></div>
+    </div>
+</body>
+</html>

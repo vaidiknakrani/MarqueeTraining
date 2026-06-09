@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdminLTE Dashboard Clone</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Source Sans 3:700';
+}
+
+body{
+    background:#2b2f35;
+}
+
+
+.container{
+    width:90%;
+    min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:250px 1.5fr;
+    grid-template-rows:60px auto;
+
+    grid-template-areas:
+    "topbar navbar"
+    "sidebar main";
+}
+
+
+
+.topbar{
+    grid-area:topbar;
+    background:#343a40;
+    color:white;
+    width:100%;
+    display:flex;
+    align-items:center;
+    padding-left:20px;
+
+    border-right:1px solid #495057;
+}
+
+.topbar h1{
+    font-size:28px;
+    font-weight:500;
+}
+.navbar{
+    grid-area:navbar;
+    background:#212529;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:1520px;
+    padding:0 30px;
+
+    border-bottom:1px solid #343a40;
+}
+
+.nav-left{
+    display:flex;
+    gap:30px;
+    color:#cfd4da;
+    font-size:18px;
+}
+
+.nav-right{
+    display:flex;
+    gap:25px;
+    color:#cfd4da;
+    font-size:18px;
+}
+
+
+
+.sidebar{
+    grid-area:sidebar;
+    background:#343a40;
+    font-family: 'Source Sans 3:700';
+    
+}
+
+.sidebar .item{
+    height:65px;
+    color:#cfd4da;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:20px;
+
+    font-family: 'Source Sans 3:700';
+}
+
+.sidebar{
+    background:#495057;
+    cursor:pointer;
+}
+
+.active{
+    background:#495057;
+    color:white;
+}
+
+.heading{
+    padding:15px 20px;
+    color:#8c959e;
+    font-size:13px;
+    font-weight:bold;
+}
+
+
+
+
+.main{
+    grid-area:main;
+    background:#2b2f35;
+    padding:20px;
+}
+
+/* =========================
+   DASHBOARD TITLE
+========================= */
+
+.topmain{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+.left{
+    color:white;
+    font-size:42px;
+    font-weight:300;
+}
+
+.right{
+    color:#6ea8fe;
+    font-size:16px;
+}
+
+
+
+.maincontent{
+    display:flex;
+    gap:20px;
+    height: 130px;
+    margin-bottom:20px;
+}
+
+.card{
+    flex:1;
+    height:180px;
+    border-radius:6px;
+    overflow:hidden;
+}
+
+.blue{
+    background:#0d6efd;
+}
+
+.green{
+    background:#198754;
+}
+
+.yellow{
+    background:#ffc107;
+}
+
+.red{
+    background:#dc3545;
+}
+
+.card-top{
+    height:120px;
+    padding:15px;
+    color:white;
+}
+
+.card-top h1{
+    font-size:42px;
+    font-weight:700;
+    
+}
+
+.card-top p{
+    margin-top:8px;
+    font-size:22px;
+}
+
+.card-bottom{
+    height:35px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.12);
+
+    font-size:16px;
+}
+
+
+
+.image{
+    display:flex;
+    gap:20px;
+}
+
+.image1{
+    flex:2;
+    height:400px;
+     margin-top: 20px;
+    position:relative;
+}
+
+.image2{
+    flex:1;
+    height:400px;
+    margin-top: 20px;
+    position:relative;
+}
+
+
+.box-title{
+    color:white;
+    font-size:30px;
+    padding:15px;
+}
+
+
+
+.graph{
+  
+    margin-top: 20px;
+}
+
+
+
+.map{
+  
+      margin-top: 20px;
+    
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+ 
+    <div class="topbar">
+        <h1>AdminLTE 4</h1>
+    </div>
+
+   
+    <div class="navbar">
+
+        <div class="nav-left">
+            <span>☰</span>
+            <span>Live Preview</span>
+            <span>Documentation</span>
+        </div>
+
+        <div class="nav-right">
+            <span>🔍</span>
+            <span>💬</span>
+            <span>🔔</span>
+            <span>⛶</span>
+            <span>🌙</span>
+            <span>👤 Alexander Pierce</span>
+        </div>
+
+    </div>
+
+    
+    <div class="sidebar">
+
+        <div class="item active">Dashboard</div>
+        <div class="item">Dashboard v1</div>
+        <div class="item">Dashboard v2</div>
+        <div class="item">Dashboard v3</div>
+        <div class="item">Theme Generate</div>
+        <div class="item">Widgets</div>
+        <div class="item">Layout Options</div>
+        <div class="item">UI Elements</div>
+        <div class="item">Mailbox</div>
+        <div class="item">Forms</div>
+        <div class="item">Tables</div>
+
+       
+
+        <div class="item">Pages</div>
+     
+
+    </div>
+
+   
+    <div class="main">
+
+        
+        <div class="topmain">
+
+            <div class="left">
+                Dashboard
+            </div>
+
+            <div class="right">
+                Home / Dashboard
+            </div>
+
+        </div>
+
+      
+        <div class="maincontent">
+
+            <div class="card blue">
+                <div class="card-top">
+                    <h1>150</h1>
+                    <p>New Orders</p>
+                </div>
+
+                <div class="card-bottom">
+                    More info
+                </div>
+            </div>
+
+            <div class="card green">
+                <div class="card-top">
+                    <h1>53%</h1>
+                    <p>Bounce Rate</p>
+                </div>
+
+                <div class="card-bottom">
+                    More info
+                </div>
+            </div>
+
+            <div class="card yellow">
+                <div class="card-top">
+                    <h1 style="color:black;"    >44</h1>
+                    
+                    <p>User Registrations</p>
+                </div>
+
+                <div class="card-bottom">
+                    More info
+                </div>
+            </div>
+
+            <div class="card red">
+                <div class="card-top">
+                    <h1>65</h1>
+                    <p>Unique Visitors</p>
+                </div>
+
+                <div class="card-bottom">
+                    More info
+                </div>
+            </div>
+
+        </div>
+   <!-- GRAPH + MAP -->
+        <div class="image">
+
+            <div class="image1">
+
+               
+                <div class="graph"> <img src="analysis.png" alt=""></div>
+
+            </div>
+
+            <div class="image2">
+
+                <div class="map"><img src="map.png" alt=""></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

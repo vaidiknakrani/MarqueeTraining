@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --mainColor: red;
+            --ContainerColor : yellow;
+            --defaultHeight : 115px;
+            --defaultWidth : 190px;
+            --ContainerHeight : 1200px;
+            --ContainerWidth : 1200px;
+            --display : inline-block;
+            --bordercircle : 50%;
+            --leftmargin : 250px;
+            --topmargin : 120px;
+            --rectwidth:1111px;
+            --rectheight : 120px;
+            --circleHeight : 120px;
+            --circleWidth: 120px;
+            --circlemargin : 450px;
+            --rectmargin : 50px;
+        }
+        .box{
+            height: var(--ContainerHeight);
+            width: var(--ContainerWidth);
+            background-color: var(--ContainerColor);
+            }
+        .box1
+        {
+            height: var(--defaultHeight);
+            width:var(--defaultWidth);
+            background-color: var(--mainColor);
+            display: var(--display);
+            margin-left: var(--leftmargin);
+            margin-top: var(--topmargin);
+        }
+         .box2
+        {
+           height: var(--defaultHeight);
+            width:var(--defaultWidth);
+            background-color: var(--mainColor);
+            display: var(--display);
+            margin-left: var(--leftmargin);
+            margin-top: var(--topmargin);
+        }
+        .box3
+        {
+            height: var(--rectheight);
+            width:var(--rectwidth);
+            background-color: var(--mainColor);
+            display: var(--display);
+            margin-left: var(--rectmargin);
+             margin-top: var(--rectmargin);
+        }
+        .box4
+        {
+              height: var(--circleHeight);
+            width:var(--circleWidth);
+            background-color: var(--mainColor);
+            display: var(--display);
+             margin-top: var(--rectmargin);
+             margin-left: var(--circlemargin);
+             border-radius: var(--bordercircle);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+</html>
